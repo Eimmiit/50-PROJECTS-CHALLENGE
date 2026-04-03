@@ -8,6 +8,7 @@ body {
     margin: 100px auto;
     padding: 20px;
     border-radius: 10px;
+    transition: all 3s ease-in;
 
 }
 
@@ -32,4 +33,97 @@ body {
   margin: 0;
   color: gray;
   font-size: 14px;
+}
+
+.post-input textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+hr {
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon{
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background-color: #4b4fa3;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  
+  font-size: 12px;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+
+
+  transition: opacity 0.5s ease-in;
+}
+
+.icon:hover .tooltip {
+  opacity: 1;
+}
+
+/* .icons span {
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+*/
+
+.icons i{
+color: #4b4fa3;
+font-size: 20px;
+} 
+
+button {
+  background-color: #4b4fa3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card .posts{
+  font-size: 20px;
+  line-height: 1;
+  color: #4b4fa3;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  
+
+}
+
+.card .posts p{
+  margin: 0;
 }
